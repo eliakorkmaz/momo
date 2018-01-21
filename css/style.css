@@ -1,8 +1,14 @@
 * {
     font-family: 'Lato', 'Monaco', 'Arial';
     font-weight: 300;
-    color: #e4e4e4;
     font-size: 20px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    text-rendering: optimizeLegibility;
 }
 
 .row{
@@ -10,22 +16,49 @@
     margin: 0 auto;
 }
 
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/background-image.jpg);
-    background-size: cover;
-    background-position: center;
+h2{
+    text-align: center;
 }
 
+h2:after{
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: "";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 /*
     -------- FOOTER ---------
  */
 
 .header-momo{
-    margin-top: 100px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.header-momo div.row{
+    padding: 60px 0;
 }
 
 .momo-title{
     float: left;
+}
+
+.momo-title p{
+    color: #e4e4e4;
+    display: inline-block;
+    font-size: 300%;
+    margin-top: -35px;
+}
+
+.momo-star {
+    font-size: 120%;
+    color: #e7f4b6;
 }
 
 .header-link{
@@ -33,10 +66,84 @@ body{
     vertical-align: middle;
 }
 
-.header-link li a{
+.header-link li a:link,
+.header-link li a:visited
+{
     text-decoration: none;
     float: right;
+    margin-left: 20px;
+    font-size: 120%;
+    color: #e4e4e4;
 }
+
+.header-link li a:hover,
+.header-link li a:active{
+    color: #777;
+}
+
+/*
+   ---------- SEARCH --------
+ */
+
+
+.section-search{
+    padding: 10px 0;
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 300px;
+}
+
+select{
+    text-indent:5px;
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 400;
+    float: right;
+    height: 50px;
+}
+
+.website-input{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 90%;
+    height: 50px;
+    padding: 0 10px;
+    outline: none;
+    float: left;
+}
+
+div.button{
+    text-align: center;
+}
+
+div.button a{
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.action{
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.action:link,
+.action:visited
+{
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: darkorange;
+    font-weight: 400i;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+
+.action:hover,
+.action:active{
+    background-color: orange;
+    color: white;
+}
+
 
 /*
    ---------- TESTIMONY --------
@@ -44,5 +151,7 @@ body{
 
 
 .section-testimony{
-
+    margin-top: 60px;
 }
+
+
