@@ -2,12 +2,12 @@
     font-family: 'Lato', 'Monaco', 'Arial';
     font-weight: 300;
     color: #e4e4e4;
+    font-size: 20px;
 }
 
 .row{
     max-width: 1140px;
     margin: 0 auto;
-    background-color: lightcoral;
 }
 
 body{
@@ -16,3 +16,33 @@ body{
     background-position: center;
 }
 
+/*
+    -------- FOOTER ---------
+ */
+
+.header-momo{
+    margin-top: 100px;
+}
+
+.momo-title{
+    float: left;
+}
+
+.header-link{
+    list-style: none;
+    vertical-align: middle;
+}
+
+.header-link li a{
+    text-decoration: none;
+    float: right;
+}
+
+/*
+   ---------- TESTIMONY --------
+ */
+
+
+.section-testimony{
+
+}
