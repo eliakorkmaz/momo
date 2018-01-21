@@ -1,0 +1,18 @@
+* {
+    font-family: 'Lato', 'Monaco', 'Arial';
+    font-weight: 300;
+    color: #e4e4e4;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
