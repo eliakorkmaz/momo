@@ -1,14 +1,21 @@
 # Momo
 Simple joy project to check a website's availability status
 
-![Screenshot]('/css/image/screenshot/scr.png')
-
 ![Screenshot](css/image/screenshot/scr.png)
 
-![Screenshot](./css/image/screenshot/scr.png)
+In momo, JS & AngularJS and a bitjQuery a bit have used.
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+### Run
+
+```bash
+git clone repo_ssh_link
+cd ~/Momo
+index.html -> open with browser
+```
+
+### Background Works 
 
 
-# Running
+> Momo has started with HTML&CSS then implemented a simple Angular MVVM Controller and with **vm** bind between Model and View. When the page has CORS problem, the error've occured in some websites that decline Cross-Origin requests.
+
 
