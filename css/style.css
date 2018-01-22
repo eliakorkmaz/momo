@@ -227,7 +227,7 @@ cite img{
 
 .momo-brand{
     padding: 5px 0;
-    font-weight: 400;
+    font-weight: 400i;
     margin-bottom: 5px;
 }
 
@@ -276,11 +276,11 @@ cite img{
 
 .first-stats p{
     margin-left: 40px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .last-stats p{
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .momo-icon{
