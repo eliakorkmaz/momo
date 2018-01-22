@@ -42,12 +42,12 @@
 
         getStatus(vm.activatedUrl);
 
-        /********************
-         * VM based functions
-         ******************/
+        /*
+          VM based functions
+                               */
         vm.testing = function () {
             if(vm.fill.length === 0 || vm.fill == "" ){
-                window.alert('Websitesini Girmelisiniz!');
+                window.alert('Websitesi Girmelisiniz!');
             } else{
                 var selection = document.getElementById('http-select');
                 var value = selection.options[selection.selectedIndex].value;
