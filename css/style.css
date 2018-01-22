@@ -248,7 +248,8 @@ cite img{
  *******************/
 
 .momo-status{
-
+    width: 85%;
+    margin: 0 auto 0 15%;
 }
 
 .first-stats{
