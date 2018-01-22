@@ -38,11 +38,14 @@
                     </option>
                 </select>
             </div>
-            <div class="col span-2-of-3">
-                <input class="website-input" type="text" placeholder="Websitesi yazın" ng-model="fill" required>
-            </div>
+            <form ng-submit="vm.testing()">
+                <!-- convert to form cause that handling for enter on input -->
+                <div class="col span-2-of-3">
+                    <input class="website-input" type="text" placeholder="Websitesi yazın" ng-model="vm.fill" required>
+                </div>
+            </form>
             <div class="button">
-                <a id="azzlack" href="#" class="action">TEST ET</a>
+                <a href="#" ng-click="vm.testing()" class="action">TEST ET</a>
             </div>
         </div>
 
