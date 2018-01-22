@@ -160,8 +160,9 @@ div.button a{
 
 .action:hover,
 .action:active{
-    background-color: orange;
+    background-color: #b77200;
     color: white;
+    font-weight: 400;
 }
 
 
