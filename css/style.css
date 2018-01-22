@@ -31,7 +31,7 @@ h2:after{
     margin-top: 30px;
 }
 /*
-    -------- FOOTER ---------
+    -------- HEADER ---------
  */
 
 .header-momo{
@@ -108,7 +108,7 @@ select{
     border-radius: 5px;
     width: 90%;
     height: 50px;
-    padding: 0 10px;
+    padding: 0 12px;
     outline: none;
     float: left;
 }
@@ -198,10 +198,40 @@ cite img{
 *****************************/
 
 .momo-footer{
-    padding: 60px 0;
+    padding: 20px 0;
     margin-top: 150px;
-    background-color: #4b4b4b;
+    background-color: #2a2a2a;
+    text-align: center;
+    color: white;
 }
 
+.momo-brand{
+    padding: 5px 0;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
 
+.ion-heart{
+    color: red;
+    font-size: 110%;
+}
 
+.momo-oasis{
+    padding: 5px 0;
+    margin-top: 5px;
+}
+
+.momo-oasis a:link,
+.momo-oasis a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+.ion-social-github{
+    font-size: 200%;
+}
+
+.momo-github a:link,
+.momo-github a:visited{
+    color: white;
+}
