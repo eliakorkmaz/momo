@@ -1,4 +1,4 @@
-<html>
+<html ng-app="momo" ng-controller="MomoController as vm">
 <head>
     <meta charset="UTF-8">
     <title>Momo</title>
@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="css/vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/vendors/css/ionicons.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="css/vendors/script/jquery.ajax-cross-origin.min.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
 </head>
 <body>
     <header class="header-momo">
@@ -39,10 +43,26 @@
                 </select>
             </div>
             <div class="col span-2-of-3">
-                <input class="website-input" type="text" placeholder="Websitesi yazın" required>
+                <input class="website-input" type="text" placeholder="Websitesi yazın" ng-model="fill" required>
             </div>
             <div class="button">
                 <a href="#" class="action">TEST ET</a>
+            </div>
+        </div>
+
+        <div class="momo-status">
+            <div class="row" style="color: white">
+                <div class="col span-1-of-2 first-stats">
+                    <p><span class="momo-icon"><i class="ion-stats-bars"></i></span>Method <span class="momo-model" ng-bind="vm.data.config.method"></span></p>
+                    <p><span class="momo-icon"><i class="ion-fireball"></i></span>Headers Accept <span class="momo-model" ng-bind="vm.data.config.headers.Accept"></span></p>
+                    <p><span class="momo-icon"><i class="ion-home"></i></span>URL <span class="momo-model" ng-bind="vm.data.config.url"></span></p>
+                </div>
+                <div class="col span-1-of-2 last-stats">
+                    <p><span class="momo-icon"><i class="ion-android-done"></i></span>Status <span class="momo-model" ng-bind="vm.data.status"></span></p>
+                    <p><span class="momo-icon"><i class="ion-bonfire"></i></span>StatusText <span class="momo-model" ng-bind="vm.data.statusText == '' ? 'NULL' : vm.data.statusText"></span></p>
+                    <p><span class="momo-icon"><i class="ion-load-d"></i></span>xhrStatus <span class="momo-model" ng-bind="vm.data.xhrStatus"></span></p>
+                </div>
+
             </div>
         </div>
     </header>
@@ -79,6 +99,5 @@
         <p class="momo-github"><a target="_blank" href="https://github.com/eliakorkmaz/momo"><i class="ion-social-github"></i></a></p>
         <p class="momo-oasis"><a href="https://www.youtube.com/watch?v=cmpRLQZkTb8">&copy; Oasis</a></p>
     </footer>
-
 </body>
 </html>
