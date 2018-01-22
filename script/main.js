@@ -15,6 +15,8 @@
         vm.busy = {
             content: false
         };
+        vm.fill = "";
+        vm.activatedUrl = 'https://jsonplaceholder.typicode.com';
 
         function activate() {
             console.log(vm.$id + ' has been activated');
@@ -24,36 +26,36 @@
         /***************************
              Functions
          ***************************/
-        function getStatus() {
+        function getStatus(withUrl) {
             $http({
                 method: 'GET',
-                /*url: 'https://eliakorkmaz.github.io'*/
-                /*url: 'https://www.google.com.tr'*/
-                /*url: 'https://eliakorkmaz.github.io'*/
-                url: 'https://jsonplaceholder.typicode.com'
+                url: withUrl
             }).
                 then(function (value) {
                     vm.data = value;
                     console.dir(value);
             }, function (reason) {
                     console.dir(reason);
+                    vm.data = reason;
             });
         }
 
-        getStatus();
+        getStatus(vm.activatedUrl);
 
-        /*******************
-         *  view based functions
-         *******************/
-
-        vm.about = function () {
-
+        /********************
+         * VM based functions
+         ******************/
+        vm.testing = function () {
+            if(vm.fill.length === 0 || vm.fill == "" ){
+                window.alert('Websitesini Girmelisiniz!');
+            } else{
+                var selection = document.getElementById('http-select');
+                var value = selection.options[selection.selectedIndex].value;
+                var websiteUrl = value+'://'+vm.fill;
+                console.log(websiteUrl);
+                getStatus(websiteUrl);
+            }
         }
-
-        vm.testimony = function () {
-
-        }
-
 
     }
 })();
