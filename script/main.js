@@ -22,7 +22,7 @@
 
         activate();
         /***************************
-             vm based function
+             Functions
          ***************************/
         function getStatus() {
             $http({
@@ -41,6 +41,19 @@
         }
 
         getStatus();
+
+        /*******************
+         *  view based functions
+         *******************/
+
+        vm.about = function () {
+
+        }
+
+        vm.testimony = function () {
+
+        }
+
 
     }
 })();
