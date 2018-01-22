@@ -67,6 +67,10 @@ h2:after{
     vertical-align: middle;
 }
 
+.header-link li a{
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
 .header-link li a:link,
 .header-link li a:visited
 {
@@ -80,6 +84,8 @@ h2:after{
 .header-link li a:hover,
 .header-link li a:active{
     color: #777;
+    padding-bottom: 5px;
+    border-bottom: 1px solid lightgray;
 }
 
 /*
@@ -234,4 +240,49 @@ cite img{
 .momo-github a:link,
 .momo-github a:visited{
     color: white;
+}
+
+
+/*********************
+    MOMO STATUS
+ *******************/
+
+.momo-status{
+
+}
+
+.first-stats{
+
+}
+
+.last-stats{
+
+}
+
+.first-stats p{
+    margin-left: 40px;
+    font-weight: 700;
+}
+
+.last-stats p{
+    font-weight: 700;
+}
+
+.momo-icon{
+    color: gainsboro;
+}
+
+.momo-icon i{
+    display: inline-block;
+    font-size: 150%;
+    margin-right: 30px;
+    margin-top: 5px;
+    color: #8096cf;
+}
+
+.momo-model {
+    display: inline-block;
+    margin-left: 10px;
+    color: lightcyan;
+    font-size: 110%;
 }
