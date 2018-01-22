@@ -1,5 +1,9 @@
-$("#button").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#elementtoScrollToID").offset().top
-    }, 2000);
-});
+$('#testimony-link').click(function () {
+    var top = $("#testimony-momo").position().top;
+    $(window).scrollTop( top );
+})
+
+$('#about-link').click(function () {
+    var top = $("#about-momo").position().top;
+    $(window).scrollTop( top );
+})
