@@ -18,6 +18,6 @@ index.html -> open with browser
 ### Background Works 
 
 
-> Momo has started with HTML&CSS then implemented a simple Angular MVVM Controller and with **vm** to bind between Model and View. When the page has CORS problem, the error've occured in some websites that decline Cross-Origin requests.
+> Momo has started with **HTML** & **CSS** then implemented a simple **Angular MVVM** Controller with **vm** to bind between Model and View. When the page has CORS problem, the error've occured in some websites that decline Cross-Origin requests.
 
 
