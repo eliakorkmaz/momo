@@ -1,9 +1,11 @@
 # Momo
-Simple joy project to check a website's availability status
+Simple joy project to check a website's **availability** status
 
 ![Screenshot](css/image/screenshot/scr.png)
 
-In momo, JS & AngularJS and a bitjQuery a bit have used.
+```
+In momo, there've been used **JavaScript** & **AngularJS** and a bit **jQuery**.
+```
 
 ### Run
 
