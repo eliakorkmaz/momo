@@ -7,13 +7,17 @@ Simple joy project to check a website's **availability** status
 In momo, there've been used JavaScript & AngularJS and a bit jQuery.
 ```
 
-### Run
+### Run 
 
 ```bash
 git clone repo_ssh_link
 cd ~/Momo
 index.html -> open with browser
 ```
+
+### Live
+
+[Momo Live](https://momostatus.herokuapp.com/)
 
 ### Background Works 
 
