@@ -4,7 +4,7 @@ Simple joy project to check a website's **availability** status
 ![Screenshot](css/image/screenshot/scr.png)
 
 ```
-In momo, there've been used **JavaScript** & **AngularJS** and a bit **jQuery**.
+In momo, there've been used JavaScript & AngularJS and a bit jQuery.
 ```
 
 ### Run
